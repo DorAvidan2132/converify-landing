@@ -7,7 +7,6 @@ node_modules/
 coverage/
 
 # Production
-build/
 dist/
 
 # Misc
@@ -33,3 +32,4 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
+.vercel
