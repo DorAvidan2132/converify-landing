@@ -19,9 +19,9 @@ export function Navigation() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled 
-          ? 'backdrop-blur-xl bg-gray-950/80 border-b border-white/10 shadow-2xl' 
-          : 'bg-transparent'
+        scrolled
+          ? 'backdrop-blur-xl bg-gray-950/95 border-b border-white/10 shadow-2xl'
+          : 'backdrop-blur-sm bg-gray-950/50'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4">
@@ -56,7 +56,7 @@ export function Navigation() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#25D366] to-[#20BD5A] group-hover:w-full transition-all duration-300"></span>
               </motion.a>
             ))}
-            <a href="https://app.converify.com/auth/signup" target="_blank" rel="noopener noreferrer">
+            <a href="https://app.converify.ai" target="_blank" rel="noopener noreferrer">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -105,7 +105,7 @@ export function Navigation() {
                     {item}
                   </motion.a>
                 ))}
-                <a href="https://app.converify.com/auth/signup" target="_blank" rel="noopener noreferrer">
+                <a href="https://app.converify.ai" target="_blank" rel="noopener noreferrer">
                   <motion.button
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}

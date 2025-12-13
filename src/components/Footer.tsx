@@ -114,19 +114,27 @@ export function Footer() {
           ))}
         </motion.div>
 
-        {/* Contact Email */}
+        {/* WhatsApp Contact */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-gray-400 mb-2">Questions or need help?</p>
+          <p className="text-gray-400 mb-4">Questions or need help?</p>
           <a
-            href="mailto:support@converify.ai"
-            className="text-[#25D366] hover:text-emerald-400 transition-colors text-lg"
+            href="https://wa.me/972552516825"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-8 py-4 backdrop-blur-xl bg-white/5 rounded-2xl border border-white/10 hover:border-[#25D366]/50 hover:bg-white/10 transition-all group"
           >
-            support@converify.ai
+            <div className="p-3 bg-gradient-to-br from-[#25D366] to-emerald-500 rounded-xl group-hover:scale-110 transition-transform">
+              <MessageCircle className="size-6 text-white" />
+            </div>
+            <div className="text-left">
+              <p className="text-white font-semibold">Contact Us on WhatsApp</p>
+              <p className="text-gray-400 text-sm">We're here to help!</p>
+            </div>
           </a>
         </motion.div>
 
@@ -138,7 +146,7 @@ export function Footer() {
           className="text-center mb-16 px-4"
         >
           <p className="text-xl sm:text-2xl mb-8 text-white">Ready to see the difference?</p>
-          <a href="https://app.converify.com/auth/signup" target="_blank" rel="noopener noreferrer" className="inline-block w-full sm:w-auto">
+          <a href="https://app.converify.ai" target="_blank" rel="noopener noreferrer" className="inline-block w-full sm:w-auto">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

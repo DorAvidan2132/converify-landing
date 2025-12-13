@@ -179,7 +179,7 @@ export function Features() {
           className="text-center mb-20 px-4"
         >
           <p className="text-lg sm:text-xl mb-6 text-gray-700">Ready to boost your marketing results?</p>
-          <a href="https://app.converify.com/auth/signup" target="_blank" rel="noopener noreferrer" className="inline-block w-full sm:w-auto">
+          <a href="https://app.converify.ai" target="_blank" rel="noopener noreferrer" className="inline-block w-full sm:w-auto">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

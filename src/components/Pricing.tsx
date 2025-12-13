@@ -122,7 +122,7 @@ export function Pricing() {
                 </p>
 
                 {/* CTA Button */}
-                <a href="https://app.converify.com/auth/signup" target="_blank" rel="noopener noreferrer" className="block">
+                <a href="https://app.converify.ai" target="_blank" rel="noopener noreferrer" className="block">
                   <motion.button
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}

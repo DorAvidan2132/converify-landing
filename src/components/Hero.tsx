@@ -1,4 +1,4 @@
-import { CheckCircle, Play, Sparkles, TrendingUp, Zap } from 'lucide-react';
+import { CheckCircle, Sparkles, TrendingUp, Zap } from 'lucide-react';
 import { motion } from 'motion/react';
 
 export function Hero() {
@@ -104,30 +104,19 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mb-12 px-4"
         >
-          <a href="https://app.converify.com/auth/signup" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+          <a href="https://app.converify.ai" target="_blank" rel="noopener noreferrer" className="inline-block">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="group relative w-full sm:w-auto px-8 py-5 bg-gradient-to-r from-[#25D366] to-[#20BD5A] rounded-2xl text-white text-lg font-semibold overflow-hidden shadow-2xl shadow-[#25D366]/50"
+              className="group relative px-12 py-6 bg-gradient-to-r from-[#25D366] to-[#20BD5A] rounded-2xl text-white text-xl font-semibold overflow-hidden shadow-2xl shadow-[#25D366]/50"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-[#20BD5A] to-[#25D366] opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <span className="relative z-10 flex items-center justify-center gap-2">
                 Start Free Trial
-                <Sparkles className="size-5" />
+                <Sparkles className="size-6" />
               </span>
             </motion.button>
           </a>
-
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="group w-full sm:w-auto px-8 py-5 backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl text-white text-lg hover:bg-white/20 transition-all"
-          >
-            <span className="flex items-center justify-center gap-2">
-              <Play className="size-5" />
-              Watch Demo
-            </span>
-          </motion.button>
         </motion.div>
 
         {/* Trust Indicator */}
@@ -175,9 +164,6 @@ export function Hero() {
         </motion.div>
 
       </div>
-
-      {/* Bottom Fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
     </section>
   );
 }
