@@ -18,11 +18,11 @@ export function ProblemSolution() {
           <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 bg-gradient-to-r from-red-50 to-green-50 rounded-full border border-gray-200">
             <span className="text-sm">The Evolution</span>
           </div>
-          <h2 className="mb-6 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent">
-            Email Marketing? So 2010.
+          <h2 className="mb-6 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent text-3xl sm:text-4xl md:text-5xl px-4">
+            Why WhatsApp Marketing?
             <br />
             <span className="bg-gradient-to-r from-[#25D366] to-[#20BD5A] bg-clip-text text-transparent">
-              WhatsApp Campaigns Convert – For Real
+              Results That Email Can't Match
             </span>
           </h2>
         </motion.div>
@@ -152,14 +152,12 @@ export function ProblemSolution() {
                 Converify: Bulk WhatsApp, Simple & Powerful
               </h3>
             </div>
-            <p className="text-gray-700 text-xl leading-relaxed mb-6">
-              Like email marketing, but unstoppable: Create templates for mass campaigns. 
-              <span className="text-[#25D366]"> Use your existing WhatsApp Business number—no new setup needed.</span>
+            <p className="text-gray-700 text-lg sm:text-xl leading-relaxed mb-6">
+              Professional WhatsApp marketing platform built on the official Meta API. Create approved templates and send bulk campaigns that your customers actually open and engage with.
             </p>
-            <p className="text-gray-700 text-xl leading-relaxed">
-              <strong>Two core powers:</strong> Send bulk campaigns to your lists, 
-              <span className="text-purple-600"> AND automate your workflows</span>—integrate with your CRM, 
-              trigger messages 24/7 whenever you need.
+            <p className="text-gray-700 text-lg sm:text-xl leading-relaxed">
+              <strong>Key capabilities:</strong> Send bulk campaigns to unlimited contacts, automate your workflows with our API, track delivery and engagement in real-time.
+              <span className="text-[#25D366]"> Use your existing WhatsApp Business account—no complex setup required.</span>
             </p>
           </div>
         </motion.div>
@@ -169,20 +167,22 @@ export function ProblemSolution() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center"
+          className="text-center px-4"
         >
-          <p className="text-xl mb-6 text-gray-700">Upgrade your game. Launch a campaign free.</p>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="group relative px-10 py-5 bg-gradient-to-r from-[#25D366] to-[#20BD5A] rounded-2xl text-white text-lg overflow-hidden shadow-2xl shadow-[#25D366]/30"
-          >
-            <div className="absolute inset-0 bg-gradient-to-r from-[#20BD5A] to-[#25D366] opacity-0 group-hover:opacity-100 transition-opacity"></div>
-            <span className="relative z-10 flex items-center gap-2">
-              Get Started Free
-              <Sparkles className="size-5" />
-            </span>
-          </motion.button>
+          <p className="text-lg sm:text-xl mb-6 text-gray-700">Start reaching customers where they're already active.</p>
+          <a href="https://app.converify.com/auth/signup" target="_blank" rel="noopener noreferrer" className="inline-block w-full sm:w-auto">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="group relative w-full sm:w-auto px-10 py-5 bg-gradient-to-r from-[#25D366] to-[#20BD5A] rounded-2xl text-white text-lg font-semibold overflow-hidden shadow-2xl shadow-[#25D366]/30"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-[#20BD5A] to-[#25D366] opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <span className="relative z-10 flex items-center justify-center gap-2">
+                Start Free Trial
+                <Sparkles className="size-5" />
+              </span>
+            </motion.button>
+          </a>
         </motion.div>
       </div>
     </section>

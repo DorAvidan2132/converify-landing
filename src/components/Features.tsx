@@ -76,27 +76,6 @@ const features = [
   }
 ];
 
-const testimonials = [
-  {
-    quote: "Converify's bulk WhatsApp campaigns = email's funeral. 5x opens!",
-    author: "SMB Campaign Lead",
-    date: "Nov 2025",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
-  },
-  {
-    quote: "Simple sends with Converify recovered carts—game over for old-school blasts.",
-    author: "Agency Pro",
-    metric: "+200% ROI",
-    date: "Dec 2025",
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop"
-  },
-  {
-    quote: "Our bulk WhatsApp campaigns with Converify crushed email—4x engagement!",
-    author: "E-com Marketer",
-    date: "Oct 2025",
-    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop"
-  }
-];
 
 export function Features() {
   return (
@@ -115,12 +94,13 @@ export function Features() {
           <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 bg-gradient-to-r from-[#25D366]/10 to-emerald-500/10 rounded-full border border-[#25D366]/30">
             <span className="text-sm text-[#25D366]">Powerful Features</span>
           </div>
-          <h2 className="mb-6 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent">
-            Core Tools for WhatsApp Campaign Wins
+          <h2 className="mb-6 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent text-3xl sm:text-4xl md:text-5xl px-4">
+            Everything You Need to Scale WhatsApp Marketing
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Email had lists and sends. WhatsApp has 98% engagement. 
-            <span className="text-[#25D366]"> Converify delivers both, stupid simple.</span>
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+            Professional WhatsApp marketing platform with <span className="text-[#25D366] font-semibold">98% engagement rates.</span>
+            <br className="hidden sm:block" />
+            <span className="text-gray-700"> Simple to use, powerful enough to scale.</span>
           </p>
         </motion.div>
 
@@ -175,17 +155,18 @@ export function Features() {
           ))}
         </div>
 
-        {/* PLG Statement */}
+        {/* Value Proposition */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-16 px-4"
         >
-          <div className="inline-block backdrop-blur-xl bg-gradient-to-r from-[#25D366]/10 to-purple-500/10 px-12 py-6 rounded-3xl border border-gray-200">
-            <p className="text-2xl">
-              <span className="bg-gradient-to-r from-[#25D366] to-emerald-600 bg-clip-text text-transparent">Simple:</span>
-              <span className="text-gray-700"> Campaigns that scale, opens that stick.</span>
+          <div className="inline-block backdrop-blur-xl bg-gradient-to-r from-[#25D366]/10 to-purple-500/10 px-8 sm:px-12 py-6 rounded-3xl border border-gray-200">
+            <p className="text-lg sm:text-2xl">
+              <span className="bg-gradient-to-r from-[#25D366] to-emerald-600 bg-clip-text text-transparent font-semibold">Reach customers where they are.</span>
+              <br className="hidden sm:block" />
+              <span className="text-gray-700"> WhatsApp delivers results that email simply can't match.</span>
             </p>
           </div>
         </motion.div>
@@ -195,64 +176,21 @@ export function Features() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="text-center mb-20 px-4"
         >
-          <p className="text-xl mb-6 text-gray-700">Bulk sends that matter—your way.</p>
-          <a href="https://app.converify.com/auth/signup" target="_blank" rel="noopener noreferrer">
+          <p className="text-lg sm:text-xl mb-6 text-gray-700">Ready to boost your marketing results?</p>
+          <a href="https://app.converify.com/auth/signup" target="_blank" rel="noopener noreferrer" className="inline-block w-full sm:w-auto">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="group relative px-12 py-6 bg-gradient-to-r from-[#25D366] to-[#20BD5A] rounded-2xl text-white text-xl overflow-hidden shadow-2xl shadow-[#25D366]/40"
+              className="group relative w-full sm:w-auto px-10 sm:px-12 py-5 sm:py-6 bg-gradient-to-r from-[#25D366] to-[#20BD5A] rounded-2xl text-white text-lg sm:text-xl font-semibold overflow-hidden shadow-2xl shadow-[#25D366]/40"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-[#20BD5A] to-[#25D366] opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <span className="relative z-10">Launch a Campaign Now</span>
+              <span className="relative z-10">Start Your Free Trial</span>
             </motion.button>
           </a>
         </motion.div>
 
-        {/* Testimonials */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="relative"
-        >
-          <h3 className="text-center mb-12 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
-            What Our Users Say
-          </h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ y: -5 }}
-                className="relative group"
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-[#25D366]/20 to-purple-500/20 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                <div className="relative backdrop-blur-xl bg-white/90 p-6 rounded-2xl border border-gray-200 shadow-lg">
-                  <div className="flex items-center gap-3 mb-4">
-                    <img
-                      src={testimonial.avatar}
-                      alt={testimonial.author}
-                      className="w-12 h-12 rounded-full object-cover ring-2 ring-[#25D366]/30"
-                    />
-                    <div>
-                      <p className="text-sm text-gray-600">{testimonial.author}</p>
-                      <p className="text-xs text-gray-400">{testimonial.date}</p>
-                    </div>
-                  </div>
-                  <p className="italic text-gray-700 mb-2">"{testimonial.quote}"</p>
-                  {testimonial.metric && (
-                    <p className="text-[#25D366]">{testimonial.metric}</p>
-                  )}
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
       </div>
     </section>
   );

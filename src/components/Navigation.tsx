@@ -27,21 +27,21 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="flex items-center gap-3 cursor-pointer"
-          >
-            <div className="relative w-10 h-10">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#25D366] to-[#20BD5A] rounded-xl blur-sm"></div>
-              <div className="relative w-10 h-10 bg-gradient-to-br from-[#25D366] to-[#20BD5A] rounded-xl flex items-center justify-center shadow-lg">
-                <Sparkles className="size-5 text-white" />
-              </div>
-            </div>
-            <span className="text-2xl">
-              <span className="bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">Converify</span>
-              <span className="text-[#25D366]">.ai</span>
-            </span>
-          </motion.div>
+          <a href="/" className="flex items-center gap-3">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="flex items-center gap-3 cursor-pointer"
+            >
+              <img
+                src="/logo.png"
+                alt="Converify Logo"
+                className="w-10 h-10 object-contain"
+              />
+              <span className="text-2xl font-bold">
+                <span className="bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">Converify</span>
+              </span>
+            </motion.div>
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
